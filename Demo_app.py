@@ -37,9 +37,9 @@ elif option_equip == equipment[1] and option_situ == situation[0]:
 elif option_equip == equipment[1] and option_situ == situation[1]:
     scenario = "The pump does not have fluid input. What does engineer do in this case?"
 elif option_equip == equipment[2] and option_situ == situation[0]:
-    scenario = "E"
+    scenario = "Normal Pressure in process vessel is 3 bar but it has 3.5 bar in process vessel. What does engineer do in this case?"
 elif option_equip == equipment[2] and option_situ == situation[1]:
-    scenario = "F"
+    scenario = "Liquid level in process vessel is so high from set point. Does engineer have idea for fix this problem?"
 st.text_area("Scenario:", scenario)
 
 # Detemine system instruction
