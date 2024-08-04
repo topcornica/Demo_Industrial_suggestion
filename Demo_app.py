@@ -69,8 +69,6 @@ model = genai.GenerativeModel(
   system_instruction = instruction,
 )
 
-logo_url = 'logo\ TAISI.png'
-st.sidebar.image(logo_url)
 
 new_chat_id = f'{time.time()}'
 MODEL_ROLE = 'ai'
