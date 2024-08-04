@@ -31,7 +31,7 @@ with col2:
 if option_equip == equipment[0] and option_situ == situation[0]:
     scenario = "Target temperature of stream 6 (Before input to stripper) is 113 degree celcius but It's only 100 degree celcius now. This stream exchanges heat with stream 12 that has 125 degree celcius. If you are engineer what do you do if stream 6 is not target temperature ?"
 elif option_equip == equipment[0] and option_situ == situation[1]:
-    scenario = "The temperature of stream 2 is 25 degree celcius but the target is 40 degree celcius. The flow rate of stream 2 is not normally operate. It decrease over time. What's happen in this Heat Excahnger?"
+    scenario = "The temperature of stream 2 is 25 degree celcius but the target is 40 degree celcius. The flow rate of stream 2 is not normally operate. It decrease over time. What's happen in this Heat Exchanger?"
 elif option_equip == equipment[1] and option_situ == situation[0]:
     scenario = "Target pressure of stream 5 is 3 bar but it's only 2.5 bar now. If it's not fix, cavitation will happen. What does engineer do in this case?"
 elif option_equip == equipment[1] and option_situ == situation[1]:
@@ -69,7 +69,7 @@ model = genai.GenerativeModel(
   system_instruction = instruction,
 )
 
-logo_url = 'logo TAISI.png'
+logo_url = 'logo\ TAISI.png'
 st.sidebar.image(logo_url)
 
 new_chat_id = f'{time.time()}'
