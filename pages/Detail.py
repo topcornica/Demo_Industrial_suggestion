@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 
+logo_url = 'logo\ TAISI.png'
+st.sidebar.image(logo_url)
+
 st.write("# Detail & Equipment")
 
 st.write("")
